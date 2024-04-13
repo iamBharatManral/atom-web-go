@@ -9,7 +9,6 @@
 body {
   font-family: "Noto Sans", sans-serif;
   background: #FBF8DD;
-
 }
 
 header {
@@ -51,7 +50,8 @@ main {
   display: flex;
   flex-direction: column;
   background: black;
-  width: 20vw;
+  max-width: 20vw;
+  min-width: 220px;
   margin: 1rem auto;
   padding: 1rem;
   color: white;
@@ -61,4 +61,15 @@ main {
 
 span {
   color: gold;
+}
+
+a {
+  font-size: 2rem;
+  background: #A34343;
+  color: #FBF8DD;
+  padding: 0.5em 1em;
+  margin: 2rem auto;
+  display: block;
+  width: min-content;
+  cursor: pointer;
 }

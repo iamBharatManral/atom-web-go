@@ -1,29 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+{{ template "base" .}}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Atom</title>
-  <link href="/static/style.css" rel="stylesheet">
-</head>
+{{ define "main" }}
 
-<body>
-  <header>
-    <h1>Atom: The fundamental in a language universe</h1>
-    <img src="/static/images/logo.png" alt="atom logo">
-    <p>It's a dynamic, strongly styped, functional language with interpreter implementation.</p>
-  </header>
-  <main>
-    <div class="code">
-      <code>
-        <span>fn</span> incr | a | <span>-></span>
-      </code>
-      <code>&nbsp;&nbsp;a + 1;</code>
-      <code><span>end;</span></code>
-    </div>
+<header>
+  <h1>Atom: The fundamental in a language universe 🌖</h1>
+  <img src="/static/images/logo.png" alt="atom logo">
+  <p>It's a dynamic, strongly styped, functional language with interpreter implementation.</p>
+</header>
+<main>
+  <div class="code">
+    <code>
+      <span>fn</span> incr | a | <span>-></span>
+    </code>
+    <code>&nbsp;&nbsp;a + 1</code>
+    <code><span>end</span></code>
+  </div>
+  <p>The language is computionally &ldquo;turing complete&rdquo; without side effects. </p>
+  <p>It's a design choice. 🤗</p>
+</main>
+<footer>
+  <a href="/docs">DOCS</a>
+</footer>
 
-  </main>
-</body>
-
-</html>
+{{ end }}
