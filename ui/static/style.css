@@ -9,17 +9,27 @@
 body {
   font-family: "Noto Sans", sans-serif;
   background: #FBF8DD;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 60vw;
 }
 
-header {
+.header--home {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5em;
-  margin: 2.5em 0;
+  gap: 2rem;
 }
 
-header img {
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header--home img {
   width: 30vw;
   border-radius: 10px;
 }
@@ -32,44 +42,77 @@ h1 {
   font-weight: bolder;
 }
 
-p {
+.header--home p,
+.home p {
   font-size: 1.8rem;
   text-align: center;
   font-style: italic;
-  max-width: 60%;
   margin: 0 auto;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
 }
 
 .code {
   display: flex;
   flex-direction: column;
+  gap: 0.7rem;
   background: black;
-  max-width: 20vw;
-  min-width: 220px;
-  margin: 1rem auto;
+  max-width: 60vw;
+  min-width: 30vw;
+  margin: 0 auto;
   padding: 1rem;
   color: white;
   border-radius: 10px;
   font-size: 1rem;
+  font-style: italic;
 }
 
 span {
   color: gold;
 }
 
-a {
+footer a {
   font-size: 2rem;
   background: #A34343;
   color: #FBF8DD;
   padding: 0.5em 1em;
-  margin: 2rem auto;
+  margin: 0 auto;
   display: block;
   width: min-content;
   cursor: pointer;
+  border-radius: 5px;
+}
+
+.header--docs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.docs {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.docs p {
+  font-size: 1rem;
+  margin: 0.5em 0;
+}
+
+.header--docs a {
+  background: #A34343;
+  color: #FBF8DD;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+.docs code {
+  background: black;
+  padding: 1.2em 1em;
+  color: white;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  display: block;
 }

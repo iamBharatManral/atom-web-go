@@ -2,20 +2,22 @@
 
 {{ define "main" }}
 
-<header>
+<header class="header--home">
   <h1>Atom: The fundamental in a language universe 🌖</h1>
   <img src="/static/images/logo.png" alt="atom logo">
   <p>It's a dynamic, strongly styped, functional language with interpreter implementation.</p>
 </header>
-<main>
+<main class="home">
   <div class="code">
     <code>
-      <span>fn</span> incr | a | <span>-></span>
+      <span>fn</span> greet | name, message | <span>-></span>
     </code>
-    <code>&nbsp;&nbsp;a + 1</code>
+    <code>&nbsp;&nbsp;&ldquo;Hello &rdquo; + name + &ldquo;, &rdquo; + message</code>
     <code><span>end</span></code>
+    <code><span>greet</span>("Bharat", "Welcome!")</code>
+    <code>> Hello Bharat, Welcome!</code>
   </div>
-  <p>The language is computionally &ldquo;turing complete&rdquo; without side effects. </p>
+  <p>The language is &ldquo;turing complete&rdquo; without side effects. </p>
   <p>It's a design choice. 🤗</p>
 </main>
 <footer>

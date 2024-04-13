@@ -2,13 +2,22 @@
 
 {{ define "main" }}
 
-<header>
+<header class="header--docs">
+  <a href="/">HOME</a>
   <h1>Atom 🌖</h1>
 </header>
-<main>
+<main class="docs">
+  <article>
+    <h2>Variable Binding</h2>
+    <p>Atom allows values to be bind to particular name, referred as 'variable binding'.</p>
+    <p>In atom, variables are immutable, and assignments are not supported.</p>
+    <code>let name = "Bharat"</code>
+    <p>However, you can redeclare the variable with same name using concept called shadowing. After using different
+      value, old value will not be accessible.</p>
+    <code>let name = "Hany"</code>
+  </article>
 </main>
 <footer>
-  <a href="/">HOME</a>
 </footer>
 
 {{ end }}
