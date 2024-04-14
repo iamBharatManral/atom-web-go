@@ -33,7 +33,7 @@
     </section>
     <section>
       <h3>2. Relational</h3>
-      <p class="op">&lt;, &lt;=, &gt;, &gt;=, !=, == </p>
+      <p class="op">&lt;, &lt;=, &gt;, &gt;=, !=, ==, % </p>
       <code>let eligibleToVote = age &gt;= 18 </code>
     </section>
     <section>
@@ -41,6 +41,31 @@
       <p class="op">and, or, ! (not)</p>
       <code>let eligibleToBePolitician = talkNonsensical and hyprocite</code>
     </section>
+  </article>
+  <article>
+    <h2>If else expression</h2>
+    <p>Atom has if else expression that works with single expression in its body.</p>
+    <code>let isEven = if num % 2 == 0 do true else false</code>
+    <p>Else part is optional.</p>
+    <code>let isEven = if num &lt; 10 do "smaller"</code>
+  </article>
+  <article>
+    <h2>Function Declaration And Expression</h2>
+    <p>Functions in atom are first class citizens. You can bind them to names and pass them as arguments to another
+      functions like normal values.</p>
+    <p>Atom supports functions in 2 formats: as normal function and as expression</p>
+    <code>let incr = fn |a| -&gt; a + 1 end</code>
+    <code>fn sum |a, b| -&gt; <br>&nbsp; &nbsp; a + b <br>end</code>
+    <code>incr(10)</code>
+    <code>sum(10, 20)</code>
+    <p>Functions by default returns the last statement from the body, unless we explicitly return using 'return'
+      keyword. In case, the last statement is not an expression, they return unit value '()'.</p>
+    <code>fn id |a| -&gt; <br>&nbsp; return a <br>end</code>
+  </article>
+  <article>
+    <h2>Iteration</h2>
+    <p>There are no looping constructs in atom, however it supports recursion for the purpose.</p>
+    <code>fn fact |n| -&gt; <br>&nbsp;&nbsp;if n == 1 do return 1 <br>&nbsp;&nbsp;n * fact(n-1) <br>end</code>
   </article>
 </main>
 <footer>
