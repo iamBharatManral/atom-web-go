@@ -12,9 +12,35 @@
     <p>Atom allows values to be bind to particular name, referred as 'variable binding'.</p>
     <p>In atom, variables are immutable, and assignments are not supported.</p>
     <code>let name = "Bharat"</code>
-    <p>However, you can redeclare the variable with same name using concept called shadowing. After using different
-      value, old value will not be accessible.</p>
+    <p>However, you can redeclare the variable with same name using concept called shadowing. Old value will not be
+      accessible further.</p>
     <code>let name = "Hany"</code>
+  </article>
+  <article>
+    <h2>Data Types</h2>
+    <p>Atom is dynamic language where types are associated with values, not with variables.</p>
+    <p>It supports integer (32 or 64 bits - architecture dependent), float (64 bits), string, boolean.</p>
+    <code>let name = "Bharat" <br>let age = 14 <br>let heightInMeter = 1.7 <br>let isAdult = true
+    </code>
+  </article>
+  <article>
+    <h2>Operators</h2>
+    <p>Atom is strongly typed meaning all the operands in an expression must be of the same type.</p>
+    <section>
+      <h3>1. Arithmetic</h3>
+      <p class="op">+, -, *, /</p>
+      <code>let name = (12 + 13) * 15</code>
+    </section>
+    <section>
+      <h3>2. Relational</h3>
+      <p class="op">&lt;, &lt;=, &gt;, &gt;=, !=, == </p>
+      <code>let eligibleToVote = age &gt;= 18 </code>
+    </section>
+    <section>
+      <h3>3. Logical</h3>
+      <p class="op">and, or, ! (not)</p>
+      <code>let eligibleToBePolitician = talkNonsensical and hyprocite</code>
+    </section>
   </article>
 </main>
 <footer>

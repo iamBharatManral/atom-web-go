@@ -116,3 +116,12 @@ footer a {
   margin: 0.5rem 0;
   display: block;
 }
+
+section .op {
+  font-size: 1.3rem;
+}
+
+section .op,
+h3 {
+  margin-left: 1em;
+}
