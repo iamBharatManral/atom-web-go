@@ -28,12 +28,12 @@
     <p>Atom is strongly typed meaning all the operands in an expression must be of the same type.</p>
     <section>
       <h3>1. Arithmetic</h3>
-      <p class="op">+, -, *, /</p>
+      <p class="op">+, -, *, /, %</p>
       <code>let name = (12 + 13) * 15</code>
     </section>
     <section>
       <h3>2. Relational</h3>
-      <p class="op">&lt;, &lt;=, &gt;, &gt;=, !=, ==, % </p>
+      <p class="op">&lt;, &lt;=, &gt;, &gt;=, !=, ==</p>
       <code>let eligibleToVote = age &gt;= 18 </code>
     </section>
     <section>
@@ -60,6 +60,8 @@
     <code>sum(10, 20)</code>
     <p>Functions by default returns the last statement from the body, unless we explicitly return using 'return'
       keyword. In case, the last statement is not an expression, they return unit value '()'.</p>
+    <p>Function are pure functions. They only work with the provided arguments. In short, they are not
+      closures.</p>
     <code>fn id |a| -&gt; <br>&nbsp; return a <br>end</code>
   </article>
   <article>

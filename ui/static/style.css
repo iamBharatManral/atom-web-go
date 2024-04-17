@@ -42,6 +42,21 @@ h1 {
   font-weight: bolder;
 }
 
+.download {
+  font-style: italic;
+  color: #A34342;
+}
+
+sup {
+  font-size: 0.8rem;
+  display: inline;
+}
+
+.header--docs h1 a {
+  padding: 0;
+  background: none;
+}
+
 .header--home p,
 .home p {
   font-size: 1.8rem;
